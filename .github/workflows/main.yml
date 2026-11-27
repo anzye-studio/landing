@@ -9,6 +9,16 @@ jobs:
       - name: hola mundo
         run: echo "Hola mundo"
 
+      - name: touch file
+        run: touch hola_anzye.txt
+
+      - name: set text
+        run: echo "Hola anzye" >> hola_anzye.txt
+
+      - name: read file
+        run: cat hola_anzye.txt
+
+
   other:
     runs-on: ubuntu-latest
     steps: 
