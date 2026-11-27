@@ -19,6 +19,9 @@ jobs:
       - name: context var from  github
         run: | 
           echo "This is a context variable from github: ${{vars.MY_REPOSITORY_VAR}}"
+      - name: working with secrets
+        run: |
+          echo "This is a secret variable: ${{secrets.MY_LANDING_SECRET}}"
 
       
   
