@@ -1,0 +1,9 @@
+name: my-action
+description: Testing my first custom action
+
+runs: 
+  using: composite
+
+  steps:
+    - name: hola mundo
+      runt: echo "hola mundo"
