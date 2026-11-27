@@ -15,3 +15,7 @@ jobs:
           MYSQL_ROOT_PASSWORD: example
         ports:
         - 3306:3306
+
+    steps:
+      - name: ls
+        run: ls -la
