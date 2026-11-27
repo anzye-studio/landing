@@ -1,0 +1,17 @@
+name: using-services
+on:
+  push:
+    branches: 
+      - main
+  
+jobs:
+  software-requirements:
+    runs-on: ubuntu-latest
+
+    services:
+      db:
+        image: mysql:5.7
+        env:
+          MYSQL_ROOT_PASSWORD: example
+        ports:
+        - 3306:3306
