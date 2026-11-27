@@ -1,10 +1,16 @@
 name: my-action
 description: Testing my first custom action
 
+inputs:
+  message:
+    description: "An example message to print for anzye"
+    required: true
+    default: "Orale ese!!"
+
 runs: 
   using: composite
 
   steps:
     - name: hola mundo
-      run: echo "hola mundo"
+      run: echo "{{inputs.message}}"
       shell: bash
