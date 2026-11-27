@@ -16,4 +16,9 @@ jobs:
           STEP_VAR: "I am a step-level env variable"
         run: |
          echo "This is a job-level env variable: $MY_JOB_LEVEL_VAR and this is a step-level env variable: $STEP_VAR"
+      - name: context var from  github
+        run: | 
+          echo "This is a context variable from github: ${{vars.MY_REPOSITORY_VAR}}"
+
+      
   
