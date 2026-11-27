@@ -8,12 +8,12 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      MY_EXAMPLE_VAR: "This is an example env variable"
+      MY_JOB_LEVEL_VAR: "I AM a job-level env variable"
 
     steps:
       - name: init
         env:
-          STEP_VAR: "This is a step-level env variable"
+          STEP_VAR: "I am a step-level env variable"
         run: |
-         echo "This is a job-level env variable: $MY_EXAMPLE_VAR and this is a step-level env variable: $STEP_VAR"
+         echo "This is a job-level env variable: $MY_JOB_LEVEL_VAR and this is a step-level env variable: $STEP_VAR"
   
